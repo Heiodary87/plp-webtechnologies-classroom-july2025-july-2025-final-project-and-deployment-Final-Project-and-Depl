@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MINDFULLNESS</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo"><h1>WELLNESS HUB</h1></div>
+    <nav class="navLinks">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="bmi.html">BMI</a></li>
+        <li><a href="workout.html">Workout</a></li>
+        <li><a href="mind.html">Mind</a></li>
+        <li><a href="sleep.html">Sleep</a></li>
+        
+      </ul>
+    </nav>
+    
+   
+    <button class="menu-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+
+  </header>
+
+  <main class="mindWellnessContainer">
+
+    <!-- INTRO SECTION -->
+    <section class="mindIntro">
+      <div class="mindIntroText">
+        <h1>Mind Wellness</h1>
+        <h3>Balance your thoughts, recharge your mind, and live fully.</h3>
+        <p>Your mental well-being is just as important as physical health. Use these simple tools to track your mood, relax, and stay positive every day.</p>
+      </div>
+      <img src="images/calm.jpeg" alt="Calm person meditating" class="introImg">
+    </section>
+
+    <!-- DAILY AFFIRMATION SECTION -->
+    <section class="affirmationSection part">
+      <h2>Daily Affirmation 💬</h2>
+      <p id="affirmationText">Press the button for your daily affirmation.</p>
+      <button id="newAffirmationBtn">✨ New Affirmation</button>
+    </section>
+
+    <!-- MOOD TRACKER SECTION -->
+    <section class="moodTracker part">
+      <h2>Track Your Mood 😊</h2>
+      <p>How are you feeling today?</p>
+      <div class="moodButtons">
+        <button class="moodBtn" data-mood="Happy">😁 Happy</button>
+        <button class="moodBtn" data-mood="Calm">😌 Calm</button>
+        <button class="moodBtn" data-mood="Stressed">😣 Stressed</button>
+        <button class="moodBtn" data-mood="Tired">🥱 Tired</button>
+        <button class="moodBtn" data-mood="Sad">😢 Sad</button>
+      </div>
+      <p id="moodResult"></p>
+    </section>
+
+    <!-- BREATHING EXERCISE SECTION -->
+    <section class="breathingSection part">
+      <h2>Breathing Exercise 🧘</h2>
+      <p>Follow the guide below to calm your mind and body.</p>
+      <button id="startBreathingBtn">Start Breathing Session</button>
+      <p id="breathingGuide" class="breathingGuide"></p>
+    </section>
+
+    <!-- RELAXATION TIPS SECTION -->
+    <section class="relaxationTips part">
+      <h2>Relaxation Tips 🌙</h2>
+      <ul>
+        <li>Take short breaks during work or study.</li>
+        <li>Practice gratitude — note 3 things you’re thankful for.</li>
+        <li>Listen to calming music or nature sounds.</li>
+        <li>Disconnect from screens 30 minutes before bed.</li>
+        <li>Talk to someone if you feel overwhelmed — you’re not alone.</li>
+      </ul>
+    </section>
+
+  </main>
+
+
+
+  <footer>
+   <div class="footer-container">
+    <p>© 2025 Wellness Hub </p>
+
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+   </div>
+ </footer>
+  
+</body>
+</html>

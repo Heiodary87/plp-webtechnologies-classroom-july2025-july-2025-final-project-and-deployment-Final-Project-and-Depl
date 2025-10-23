@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SLEEP TRACKER</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo"><h1>WELLNESS HUB</h1></div>
+    <nav class="navLinks">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="bmi.html">BMI</a></li>
+        <li><a href="workout.html">Workout</a></li>
+        <li><a href="mind.html">Mind</a></li>
+        <li><a href="sleep.html">Sleep</a></li>
+      </ul>
+    </nav>
+    
+   
+    <button class="menu-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+
+  </header>
+
+  <main class="sleepContainer">
+
+    <section class="sleepSummary" >
+      <div class="moon"></div>
+      <div class="sleepDetails">
+        <h2>Sleep and Recovery</h2>
+       <h3>Your body repairs, your mind resets- sleep is your silent healer.</h3>
+       <p>Sleep is an essential part of health-span-living. Research suggests that getting enough sleep allows your body to recharge, repair, and prepare for the next day. Sleep deprivation can affect your mood, cognitive function, and overall well-being.</p>
+      </div>
+    </section>
+
+    <section class="sleepTracker">
+      <h2>Sleep Tracker</h2>
+      <div class="userSleepInput">
+        <label for="sleepStart">Time to sleep:</label>
+        <input type="time" id="sleepStart" >
+
+        <label for="sleepEnd">Time to wake up:</label>
+        <input type="time" id="sleepEnd">
+
+        <label for="sleepRest">How rested do you feel in the morning:</label>
+        <select id="sleepRest">
+          <option value="Very Energized">Very Energized</option>
+          <option value="Somewhat Energized">Somewhat Energized</option>
+          <option value="Neutral">Neutral</option>
+          <option value="Somewhat Tired">Somewhat Tired</option>
+          <option value="Very Tired">Very Tired</option>
+        </select>
+
+        <button id="calculateSleep">Calculate Sleep Quality</button>
+
+        
+      </div>
+
+      <div class="sleepResult"></div>
+
+
+
+    </section>
+
+    <section class="sleepTips">
+      <h2>Sleep Tips</h2>
+      <ul>
+        <li>Stick to a regular sleep schedule, even on weekends.</li>
+        <li>Create a sleep-friendly environment with a cool, dark, and quiet room.</li>
+        <li>Limit caffeine and alcohol before bedtime.</li>
+        <li>Avoid screens before sleep to reduce blue light exposure.</li>
+        <li>Try relaxation techniques like deep breathing or meditation before bed.</li>
+      </ul>
+      <p>Remember, sleep is a vital part of your health-span-living. Prioritize it for better well-being.</p>
+    </section>
+
+  </main>
+
+
+
+  <footer>
+   <div class="footer-container">
+    <p>© 2025 Wellness Hub </p>
+
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+   </div>
+ </footer>
+  
+</body>
+</html>

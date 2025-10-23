@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WORKOUT PLANNER</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo"><h1>WELLNESS HUB</h1></div>
+    <nav class="navLinks">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="bmi.html">BMI</a></li>
+        <li><a href="workout.html">Workout</a></li>
+        <li><a href="mind.html">Mind</a></li>
+        <li><a href="sleep.html">Sleep</a></li>
+        
+      </ul>
+    </nav>
+    
+   
+    <button class="menu-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+
+  </header>
+
+  <main class="workoutContainer">
+    <section class="workoutHero">
+      <h1>Crush Your Fitness Goals</h1>
+      <p>Welcome to your daily motivation zone. Whether you’re training for strength, endurance, or just to feel good, this is where it begins. Let’s get moving..</p>
+      <button class="workoutGetStarted">Get Started</button>
+    </section>
+
+    <section class="workoutFocus">
+      <h2>Focus Areas</h2>
+      <div class="focusCards">
+        <div class="focusCard">
+          <img src="images/fullBody.jpeg" alt="Full Body">
+          <h3>🏃 Full Body</h3>
+          <p>Engage all major muscle groups for a balanced and effective workout.</p>
+          <button class="fullBody">Get To It</button>
+        </div>
+        <div class="focusCard">
+          <img src="images/arms.jpeg" alt="Arms">
+          <h3>💪 Arms</h3>
+          <p>Build strength and definition with targeted arm exercises.</p>
+          <button class="arms">Get To It</button>
+        </div>
+        <div class="focusCard">
+          <img src="images/legs.jpeg" alt="Legs">
+          <h3>🦵 Legs</h3>
+          <p>Enhance lower body power and endurance with focused leg workouts.</p>
+          <button class="legs">Get To It</button>
+        </div>
+        <div class="focusCard">
+          <img src="images/core.jpeg" alt="Core">
+          <h3>� ab</h3>
+          <p>Strengthen your core for better posture and overall stability.</p>
+          <button class="core">Get To It</button>
+        </div>
+      </div> 
+    </section>
+    
+    <section class="focusMoves">
+      <div class="fullBodyCard">
+        <h2>Full Body Workout</h2>
+        <ul>
+          <li>Jumping Jacks – 30 sec warm-up, full body activation.</li>
+          <li>Push-ups – Upper body & core strength builder.</li>
+          <li>Squats – Targets glutes, thighs, and lower back</li>
+          <li>Plank – Builds endurance and strengthens your core</li>
+        </ul>
+      </div>
+      <div class="armsCard">
+        <h2>Arm Workout</h2>
+        <ul>
+          <li>Arm Circles – Improves mobility and tones shoulders.</li>
+          <li>Tricep Dips – Targets the back of the arms.</li>
+          <li>Shoulder Taps – Enhances balance and stability.</li>
+          <li>Bicep Curls – Use water bottles if no weights!</li>
+        </ul>
+      </div>
+      <div class="legsCard">
+        <h2>Leg Workout</h2>
+        <ul>
+          <li>Lunges – Works thighs and glutes.</li>
+          <li>Squats – Boosts leg power and flexibility.</li>
+          <li>Calf Raises – Tones calves and improves ankle strength.</li>
+          <li>Wall Sit – Burns and builds endurance.</li>
+        </ul>
+      </div>
+      <div class="coreCard">
+        <h2>Core Workout</h2>
+        <ul>
+          <li>Crunches – Strengthens abdominal muscles.</li>
+          <li>Leg Raises – Targets lower abs effectively.</li>
+          <li>Russian Twists – Engages obliques for a toned waist.</li>
+          <li>Mountain Climbers – Full-body workout focusing on core.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="workoutTimer">
+     <h2>Workout Timer</h2>
+     <p>Stay focused. Rest right. Track every second of progress.</p>
+     <div class="timer">
+      <div class="timerInput">
+        <input type="number" id="minutes" placeholder="Minutes">
+        <input type="number" id="seconds" placeholder="Seconds">
+      </div>
+      <div class="timerButtons">
+        <button id="startTimer">Start</button>
+        <button id="resetTimer">Reset</button>
+      </div>
+     </div>
+     <p class="timerStart"></p>
+    </section>
+
+    
+
+
+  </main>
+
+
+
+  <footer>
+   <div class="footer-container">
+    <p>© 2025 Wellness Hub </p>
+
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+   </div>
+ </footer>
+  
+</body>
+</html>
