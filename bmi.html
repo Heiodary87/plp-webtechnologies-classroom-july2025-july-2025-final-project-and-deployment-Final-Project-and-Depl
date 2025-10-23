@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo"><h1>WELLNESS HUB</h1></div>
+    <nav class="navLinks">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="bmi.html">BMI</a></li>
+        <li><a href="workout.html">Workout</a></li>
+        <li><a href="mind.html">Mind</a></li>
+        <li><a href="sleep.html">Sleep</a></li>
+        
+      </ul>
+    </nav>
+    
+   
+    <button class="menu-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+
+  </header>
+
+  <main class="container">
+
+    <div class="userInput">
+      <h2>Body Mass Index Calculator</h2>
+      <div class="inputing">
+        <label for="weight">Weight (kg):</label>
+        <input type="number" id="weight" placeholder="Enter your weight in kg"><br>
+
+        <label for="height">Height (cm):</label>
+        <input type="number" id="height" placeholder="Enter your height in cm"><br>
+
+        <button id="calculateBtn">Calculate BMI</button>
+      </div>
+
+    </div>
+    <div class="bmiResult"></div>
+      
+
+    
+  </main>
+
+
+
+  <footer>
+   <div class="footer-container">
+    <p>© 2025 Wellness Hub </p>
+
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+   </div>
+ </footer>
+  
+</body>
+</html>
