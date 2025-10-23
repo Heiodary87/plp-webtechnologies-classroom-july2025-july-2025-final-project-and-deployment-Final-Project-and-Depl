@@ -1,90 +1,178 @@
-# 📦 Final Assignment: Build, Organize, and Deploy a Multipage Website
+# 🌿 WellBeing Hub — Mini Health Companion
 
-You're now ready to bring everything together—HTML, CSS, JavaScript, planning, structure, and deployment. This final project challenges you to **conceptualize, build, and deploy a multi-page website** that is responsive, interactive, and ready for the real world.
-
-This assignment will guide you from planning your site all the way to deploying it online. Let’s make your project *production-worthy*! 🚀
+A modern, interactive wellness web app designed to help users manage their **physical, mental, and emotional health** through simple tools like a BMI calculator, workout planner, sleep tracker, and mindfulness guide.
 
 ---
 
-## 🌐🎯 Part 1: Planning and Organizing a Multipage Website
+## 🚀 Overview
 
-Before you write any code, take time to plan:
+**WellBeing Hub** is a multi-page front-end project built with **HTML**, **CSS**, and **JavaScript**.  
+The goal is to demonstrate practical use of core web technologies to create an app that feels clean, interactive, and purpose-driven — blending design and function for daily well-being.
 
-* Define your website's purpose (portfolio, product showcase, blog, etc.)
-* Outline 3–5 pages (e.g., Home, About, Services, Contact, Gallery)
-* Sketch or describe the layout of each page
-* Map out internal navigation (how pages link to one another)
-
-**Goal:** Show intentional structure and user journey across the site.
-
----
-
-## 🌍💻 Part 2: Build the Website Using HTML5, CSS, and JavaScript
-
-Using your plan, begin building:
-
-* Use HTML5 for semantic structure
-* Apply CSS for responsive layout, styling, and animations
-* Use JavaScript to add interactivity (menus, forms, toggles, dynamic content)
-
-Each page should:
-
-* Be mobile-responsive
-* Share a consistent layout/header/footer
-* Include at least one interactive element (e.g., form validation, toggle menu, animation on scroll)
-
-**Goal:** Integrate everything you’ve learned in a cohesive, functioning project.
+Each page focuses on a specific aspect of health:
+- **Physical Health:** via BMI tracking and workout planning  
+- **Rest & Recovery:** via sleep monitoring  
+- **Mind Wellness:** via affirmations and focus exercises  
 
 ---
 
-## 🛠️🚀 Part 3: Best Practices for Code Organization
+## 🧩 Core Features
 
-Before deployment, refactor your project to follow production-friendly practices:
-
-* Organize files in folders (`/css`, `/js`, `/images`, etc.)
-* Write clean, modular, and commented code
-* Use meaningful file names and relative paths
-* Validate your HTML/CSS and test on different screen sizes
-
-**Goal:** Prepare your codebase to be readable, maintainable, and scalable.
+| Feature | Description | Key JS Functionality |
+|----------|--------------|----------------------|
+| **BMI Calculator** | Calculates BMI from weight and height | Math operations, DOM manipulation, input validation |
+| **Workout Planner** | Add or remove workouts with live progress display | Dynamic DOM updates, `localStorage` for persistence |
+| **Sleep Tracker** | Input sleep hours and get feedback | Conditional logic with live UI feedback |
+| **Mind Wellness** | Shows affirmations or breathing animation | Randomization (`Math.random`), timing (`setTimeout`) |
 
 ---
 
-## 🌐🚀 Part 4: Introduction to Hosting and Deployment
+## 🧠 App Logic & Function Flow
 
-Once your project is complete, choose a method to **host your site online**.
+### 🏠 Homepage
+- Provides an introduction and navigation to all sections.
+- Uses a fade-in or typing effect for welcoming text.
+- Navigation bar links all other pages dynamically.
 
-You can use:
+### ⚖️ BMI Calculator
+- Formula:  
+  ```js
+  const bmi = weight / (height * height);
 
-* **GitHub Pages** (great for portfolios and static sites)
-* **Netlify** (powerful CI/CD features and easy form support)
-* **Vercel** (lightning-fast deployment for frontend projects)
+  JS evaluates user input → updates the DOM with BMI result and health status.
 
-Deploy your project and confirm that:
+Displays advice messages like “Normal weight” or “Overweight”.
 
-* All links and scripts work
-* It loads properly on mobile and desktop
-* It has a clear, shareable URL
+.🏋️ Workout Planner
 
-**Goal:** Publish your work online and make it accessible to the world.
+Users can log workouts and remove them.
 
----
+All data is stored in localStorage:
 
-## Deliverables
+localStorage.setItem('workouts', JSON.stringify(workoutList));
 
-1. A GitHub repository containing:
 
-   * Your complete project code, properly organized
-   * A `README.md` file explaining your project purpose, structure, and live URL
-2. A live deployed website (hosted via GitHub Pages, Netlify, or Vercel)
+On page load, saved workouts are reloaded dynamically.
 
----
+A progress bar updates based on completed tasks.
 
-## Outcome
+.😴 Sleep Tracker
 
-* Clarity and thoroughness of planning documentation
-* Proper use of HTML5, CSS, and JavaScript across multiple pages
-* Responsive and accessible design
-* Clean, well-organized, and commented code
-* Successful live deployment with a working link
-* Evidence of following best practices
+Accepts total sleep hours → evaluates and displays a personalized message.
+
+if (hours < 6) message = "Too little sleep!";
+else if (hours <= 8) message = "Good rest!";
+else message = "You might be oversleeping.";
+
+
+Encourages healthy sleep patterns through feedback.
+
+.🧘 Mind Wellness
+
+Displays random affirmations using an array and Math.random().
+
+Optionally triggers a guided breathing animation using setTimeout for timed steps ("Inhale", "Hold", "Exhale").
+
+Promotes mental calm and mindfulness.
+
+
+
+🎨DESIGN PHILOSOPHY
+
+The design emphasizes simplicity, clarity, and positive energy.
+All styling is consistent across pages, using a shared color palette and modern layout system.
+
+Color Palette
+
+:root {
+  --color-primary: #14b148e0;
+  --color-secondary: #0fcfdd;
+  --color-accent: antiqueWhite;
+  --color-dark: #212121;
+  --color-light: #F5F5F5;
+}
+
+
+STYLING APPROACH
+
+Flexbox and CSS Grid for structure
+
+Card-based layout for tools
+
+Hover effects and fade-in animations for interactivity
+
+Media queries for responsiveness (mobile-first)
+
+
+
+⚙️ TECH STACK
+
+HTML5 — Semantic structure and navigation
+
+CSS3 — Custom variables, Flexbox, transitions, and responsive design
+
+JavaScript (ES6) — DOM manipulation, setTimeout, setInterval, conditional logic, and local storage
+
+
+
+🗂️ Folder Structure
+wellbeing-hub/
+│
+├── index.html
+├── bmi.html
+├── workout.html
+├── sleep.html
+├── mind.html
+├── contact.html
+│
+├── style.css
+├── script.js
+└── assets/
+    ├── images/
+    
+
+💡DEVELOPMENT INSIGHTS
+
+This project was built from scratch to strengthen front-end logic and real-world problem solving.
+The emphasis was not only on functionality but also on readability, user experience, and clear code structure.
+
+Key learning points:
+
+Breaking a project into logical components (pages and functions)
+
+Using addEventListener effectively
+
+Implementing condition-based DOM updates
+
+Creating reusable JS components
+
+Understanding the use of setTimeout and setInterval in animations and timers
+
+
+
+🧩POSSIBLE FUTURE ENHANCEMENTS
+
+Weekly progress summary dashboard
+
+Dark/light mode toggle
+
+Integrate APIs for quotes or health tips
+
+Sleep pattern visualization (chart.js or canvas)
+
+Mobile PWA version for offline use
+
+
+
+🧑‍💻 AUTHOR
+
+Henry Obado
+WEB Developer & Medical Student
+📧 obadohenry98@gmail.com
+
+📍 Nairobi, Kenya
+
+This project is open-source and free to use for educational or personal learning purposes.
+
+“A healthy mind and body are built through small, consistent steps — WellBeing Hub helps make those steps interactive and fun.”
+
